@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
     public TMP_Text statusText;
 
     public bool timeIsRunning = false;
+    public bool usbDone = false;
+    public bool urlDone = false;
+    public bool cleaningDone = false;
+    public bool ransomDone = false;
+
+    public int assDone = 0;
 
     public float timer = 0;
     public float minutes;
