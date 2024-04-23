@@ -13,9 +13,13 @@ public class GameManager : MonoBehaviour
 
     public bool timeIsRunning = false;
     public bool usbDone = false;
+    public bool usbCorrect = false;
     public bool urlDone = false;
+    public bool urlCorrect = false;
     public bool cleaningDone = false;
+    public bool cleaningCorrect = false;
     public bool ransomDone = false;
+    public bool ransomCorrect = false;
 
     public int assDone = 0;
 

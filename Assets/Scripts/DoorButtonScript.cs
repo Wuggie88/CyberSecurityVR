@@ -22,7 +22,7 @@ public class DoorButtonScript : MonoBehaviour
         if(gameManager.GetComponent<GameManager>().assDone < 4) {
             if (!gameManager.GetComponent<GameManager>().usbDone) {
                 //Put the usb assignment up on the screen
-                monitorText.text = "Løs opgaven omkring USB, helpdesk kan eventuelt hjælpe";
+                monitorText.text = "Løs opgaven omkring USB, Find skærmen med et tal på";
             } else if(!gameManager.GetComponent<GameManager>().urlDone) {
                 //put the url assignment up on the screen
                 monitorText.text = "Løs opgaven omkring URL, helpdesk kan eventuelt hjælpe";
@@ -48,10 +48,7 @@ public class DoorButtonScript : MonoBehaviour
 
     IEnumerator test() {
         yield return new WaitForSeconds(5);
-        gameManager.GetComponent<GameManager>().assDone = gameManager.GetComponent<GameManager>().assDone + 1;
-        monitorText.text = "Løs opgaven omkring USB, helpdesk kan eventuelt hjælpe";
-        gameManager.GetComponent<GameManager>().usbDone = true;
-        gameManager.GetComponent<GameManager>().timeIsRunning = false;
+        Debug.Log("Test in door script ran");
     }
 
 
