@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameManager
   - USB
+  - URL
   layers:
   - Default
   - TransparentFX
