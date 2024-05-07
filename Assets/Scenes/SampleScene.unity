@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7228,6 +7228,8 @@ GameObject:
   - component: {fileID: 790371134}
   - component: {fileID: 790371133}
   - component: {fileID: 790371132}
+  - component: {fileID: 790371139}
+  - component: {fileID: 790371138}
   m_Layer: 0
   m_Name: URL
   m_TagString: URL
@@ -7500,6 +7502,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790371138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790371131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee49329848b3dd4aa5518b698210eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _noteController: {fileID: 0}
+  noteText: 
+  correctAnswer: 0
+--- !u!114 &790371139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790371131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad9068c1af6dd34cb105980a510c5a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoteCanvas: {fileID: 0}
+  CanvasText: {fileID: 0}
+  noteText: 
+  openEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &827683794
 GameObject:
   m_ObjectHideFlags: 0
