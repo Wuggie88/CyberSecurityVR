@@ -19,7 +19,6 @@ public class noteControllerScript : MonoBehaviour
 
     void Start() {
         NoteCanvas = GameObject.FindWithTag("cameraCanvas");
-        //somehow find CanvasText and set it!   
         CanvasText = GameObject.FindWithTag("canvasText").GetComponent<TMP_Text>();
     }
 
