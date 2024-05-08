@@ -7,28 +7,25 @@ public class DoorButtonScript : MonoBehaviour
 
     public GameObject gameManager;
     public TextMeshProUGUI monitorText;
+    public GameObject door;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        StartCoroutine(test());
     }
 
     //do things when other things collide with the button
     public void OnTriggerEnter(Collider other) {
 
         //check if assignments are done
-        if(gameManager.GetComponent<GameManager>().assDone < 4) {
+        if(gameManager.GetComponent<GameManager>().assDone < 3) {
             if (!gameManager.GetComponent<GameManager>().usbDone) {
                 //Put the usb assignment up on the screen
                 monitorText.text = "Løs opgaven omkring USB, Find skærmen med et tal på";
             } else if(!gameManager.GetComponent<GameManager>().urlDone) {
                 //put the url assignment up on the screen
                 monitorText.text = "Løs opgaven omkring URL, helpdesk kan eventuelt hjælpe";
-            } else if (!gameManager.GetComponent<GameManager>().cleaningDone) {
-                //Put the Cleaning assignment up on the screen
-                monitorText.text = "Ryd op på skrivebordene, helpdeks kan eventuelt hjælpe med hvad.";
             } else if (!gameManager.GetComponent<GameManager>().ransomDone) {
                 //put the ransomwarae assignment up on the screen
                 monitorText.text = "Løs opgaven omkring ransomware, helpdesk kan eventuelt hjælpe";
@@ -42,14 +39,9 @@ public class DoorButtonScript : MonoBehaviour
             //Freeze timer, set the status screen and open the door
             monitorText.text = "Alle opgaver løst";
             gameManager.GetComponent<GameManager>().timeIsRunning = false;
+            door.transform.Rotate(0, 90, 0);
+
         }
         
-    }
-
-    IEnumerator test() {
-        yield return new WaitForSeconds(5);
-        Debug.Log("Test in door script ran");
-    }
-
-
+    } 
 }
