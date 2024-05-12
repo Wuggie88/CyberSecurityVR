@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
     public bool usbCorrect = false;
     public bool urlDone = false;
     public bool urlCorrect = false;
-    public bool cleaningDone = false;
-    public bool cleaningCorrect = false;
+    //public bool cleaningDone = false;
+    //public bool cleaningCorrect = false;
     public bool ransomDone = false;
     public bool ransomCorrect = false;
 
