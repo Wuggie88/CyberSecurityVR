@@ -18,7 +18,7 @@ public class DoorButtonScript : MonoBehaviour
     //do things when other things collide with the button
     public void OnTriggerEnter(Collider other) {
 
-        //check if assignments are done
+        //check if assignments are done This should actually be in gamemanager script! 
         if(gameManager.GetComponent<GameManager>().assDone < 3) {
             if (!gameManager.GetComponent<GameManager>().usbDone) {
                 //Put the usb assignment up on the screen

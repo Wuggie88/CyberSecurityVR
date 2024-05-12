@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public TMP_Text assText;
     public TMP_Text timerText;
     public TMP_Text statusText;
+    public TMP_Text urlScoreText;
+    public TMP_Text usbScoreText;
+    public TMP_Text ransomScoreText;
 
     public bool timeIsRunning = false;
     public bool usbDone = false;
@@ -41,8 +44,6 @@ public class GameManager : MonoBehaviour
             timer += Time.deltaTime;
             displayTime(timer);
         }
-        
-        
     }
 
     void displayTime(float timer) {
