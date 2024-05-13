@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13217,6 +13217,7 @@ MonoBehaviour:
   urlScoreText: {fileID: 1107784339}
   usbScoreText: {fileID: 1824681436}
   ransomScoreText: {fileID: 1465894869}
+  monitorText: {fileID: 5615157}
   timeIsRunning: 1
   usbDone: 0
   usbCorrect: 0
@@ -13229,6 +13230,7 @@ MonoBehaviour:
   minutes: 0
   seconds: 0
   miliSeconds: 0
+  door: {fileID: 341032742}
 --- !u!1001 &1301203075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15606,8 +15608,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  monitorText: {fileID: 5615157}
-  door: {fileID: 341032742}
 --- !u!1001 &1391511709
 PrefabInstance:
   m_ObjectHideFlags: 0

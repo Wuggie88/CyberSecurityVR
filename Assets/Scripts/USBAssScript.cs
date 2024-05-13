@@ -40,37 +40,37 @@ public class USBAss : MonoBehaviour
                 AssNumber = 57;
                 //Blue USB
                 correctUSB = GameObject.Find("USB_Blue");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
             case 2:
                 AssNumber = 29;
                 //Red USB
                 correctUSB = GameObject.Find("USB_Red");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
             case 3:
                 AssNumber = 17;
                 //Green USB
                 correctUSB = GameObject.Find("USB_Green");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
             case 4:
                 AssNumber = 92;
                 //Purple USB
                 correctUSB = GameObject.Find("USB_Purple");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
             case 5:
                 AssNumber = 63;
                 //Yellow USB
                 correctUSB = GameObject.Find("USB_Yellow");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
             default:
                 AssNumber = 92;
                 //Purple USB
                 correctUSB = GameObject.Find("USB_Purple");
-                MonitorText.text = AssNumber.ToString();
+                MonitorText.text = "indsæt usb: " + AssNumber.ToString();
                 break;
         }
 
