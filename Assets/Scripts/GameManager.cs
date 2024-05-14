@@ -80,21 +80,21 @@ public class GameManager : MonoBehaviour
             timeIsRunning = false;
 
             if (usbCorrect) {
-                usbScoreText.text = "Correct answer explained";
+                usbScoreText.text = "Korrekt, det er vigtigt kun at bruge de USB enheder som ens IT afdeling har godkendt.";
             } else {
-                usbScoreText.text = "Wrong answer explained";
+                usbScoreText.text = "Ikke korrekt, hvis man er i tvivl omkring om man kan bruge en USB enhed, er det altid bedst at spørge ens IT afdeling.";
             }
 
             if (urlCorrect) {
-                urlScoreText.text = "Correct answer explained";
+                urlScoreText.text = "Korrekt, det kan godt ligne at et link er det korrekte når man først kigger på det uden at være det, det er derfor vigtigt at man tager sig lidt tid og tjekker hvad for en hjemmeside linket egentlig fører til";
             } else {
-                urlScoreText.text = "Wrong answer explained";
+                urlScoreText.text = "Ikke korrekt, det kan godt ligne at et link er det korrekte når man først kigger på det uden at være det, det er derfor vigtigt at man tager sig lidt tid og tjekker hvad for en hjemmeside linket egentlig fører til";
             }
 
             if (ransomCorrect) {
-                ransomScoreText.text = "Correct answer explained";
+                ransomScoreText.text = "Korrekt, det er altid vigtigt at melde ransomware angreb til sin IT afdeling hurtigst muligt og få styr på ting som eksempelvis backups.";
             } else {
-                ransomScoreText.text = "Wrong answer explained";
+                ransomScoreText.text = "Ikke korrekt, det er sjældent en god ide at betale til ransomware, men uanset hvad skal man altid kontakte sin IT afdeling og melde ransomware hurtigst muligt og få hjælp på denne måde.";
             }
             door.transform.Rotate(0, 90, 0);
         }
