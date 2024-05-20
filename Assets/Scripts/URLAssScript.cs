@@ -18,9 +18,17 @@ public class URLAssScript : MonoBehaviour
                 MonitorText.text = "Success!";
                 this.GetComponent<Collider>().enabled = false;
                 GameManager.GetComponent<GameManager>().urlCorrect = true;
+                //find all URL objects and delete them
+                GameObject[] gos = GameObject.FindGameObjectsWithTag("URL");
+                foreach (GameObject go in gos)
+                    Destroy(go);
             } else {
                 MonitorText.text = "Error";
                 this.GetComponent<Collider>().enabled = false;
+                //find all URL objects and delete them
+                GameObject[] gos = GameObject.FindGameObjectsWithTag("URL");
+                foreach (GameObject go in gos)
+                    Destroy(go);
             }
         }
     }
